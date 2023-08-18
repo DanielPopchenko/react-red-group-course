@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { CarService } from '../../../../services/car.service';
 import { ICarData } from '../../../../types/car.interface';
-import styles from './CreateCarForm.module.css';
+// import styles from './CreateCarForm.module.css';
 import useCreateCar from './useCreateCar';
 
 const clearData = {
@@ -27,11 +27,11 @@ const CreateCarForm = () => {
   const { createCar } = useCreateCar(reset);
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit(createCar)}>
+    <form className="form" onSubmit={handleSubmit(createCar)}>
       <input
         type="text"
         placeholder="Name"
-        className={styles.input}
+        className="input"
         {...register('name', { required: 'Name is required!' })}
       />
 
@@ -41,13 +41,13 @@ const CreateCarForm = () => {
       <input
         type="text"
         placeholder="Price"
-        className={styles.input}
+        className="input"
         {...register('price', { required: true })}
       />
       <input
         type="text"
         placeholder="Image"
-        className={styles.input}
+        className="input"
         {...register('image', { required: true })}
       />
 

@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './assets/styles/global.css';
 import Router from './components/ui/Router';
 import AuthProvider from './providers/AuthProvider';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+
+import './styles/global.scss';
 
 const queryClient = new QueryClient();
 

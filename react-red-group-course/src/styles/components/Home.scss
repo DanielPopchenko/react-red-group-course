@@ -1,13 +1,13 @@
+@import '../ui/colors';
 .item {
     display: block;
     width: 500px;
     min-height: 350px;
-    border: 1px solid #fff;
+    border: 1px solid getColor('whiteText');
     border-radius: 7px;
-}
-
-.item+.item {
-    margin-top: 20px;
+    &+& {
+        margin-top: 20px;
+    }
 }
 
 .image {
@@ -21,12 +21,10 @@
 
 .info {
     padding: 10px;
-}
-
-.info h2 {
-    margin-bottom: 5px;
-}
-
-.info p {
-    margin-bottom: 5px;
+    h2 {
+        margin-bottom: 5px;
+    }
+    p {
+        margin-bottom: 5px;
+    }
 }

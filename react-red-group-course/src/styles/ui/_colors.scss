@@ -1,0 +1,4 @@
+$colors: ( 'background': #111, 'whiteText': #fff, 'hoverBtn': rgb(155, 213, 240), );
+@function getColor($key) {
+    @return map-get($colors, $key);
+}

@@ -1,5 +1,6 @@
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import CarDetail from '../screens/car-detail/carDetail';
+import CarDetail from '../screens/car-detail/CarDetail';
 import Home from '../screens/home/Home';
 
 const Router = () => {

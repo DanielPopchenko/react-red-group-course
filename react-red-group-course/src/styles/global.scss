@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500&display=swap');
+@import './ui/colors';
+@import './components/CreateCarForm.scss';
+@import './components/Home.scss';
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: #111;
-    color: #fff;
+    background-color: getColor('background');
+    color: getColor('whiteText');
     padding: 30px 20px;
     font-family: 'Golos Text', sans-serif;
     font-size: 17px;
@@ -27,8 +30,7 @@ h1 {
     transition: all 0.3s ease;
     margin-top: 10px;
     font-size: 17px;
-}
-
-.btn:hover {
-    background-color: rgb(155, 213, 240);
+    &:hover {
+        background-color: getColor('hoverBtn');
+    }
 }

@@ -13,12 +13,10 @@
     transition: border-color 0.4s ease;
     border: 1px solid transparent;
     font-size: 16px;
-}
-
-.input+.input {
-    margin-top: 10px;
-}
-
-.input:focus {
-    border-color: aqua;
+    &+& {
+        margin-top: 10px;
+    }
+    &:focus {
+        border-color: aqua;
+    }
 }

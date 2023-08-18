@@ -2,7 +2,7 @@ import React from 'react';
 import { useQueryClient } from '@tanstack/react-query';
 import { useMutation } from '@tanstack/react-query';
 import { CarService } from '../../../../services/car.service';
-import { ICar, ICarData } from '../../../../types/car.interface';
+import { ICarData } from '../../../../types/car.interface';
 import { SubmitHandler, UseFormReset } from 'react-hook-form';
 
 const useCreateCar = (reset: UseFormReset<ICarData>) => {
